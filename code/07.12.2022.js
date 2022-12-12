@@ -37,3 +37,14 @@
 // let result = goods.map(elem => ({id: elem.id ** 2, name: elem.name.length, quantity: elem.quantity*elem.id}))
 
 // console.log(result)
+
+let goods = [
+    {id: 4, name: 'Скейтборд', quantity: 30},
+    {id: 4, name: 'Самокат', quantity: 15},
+    {id: 3, name: 'Велотренажер', quantity: 20},
+    {id: 3, name: 'Велосипед', quantity: 5},
+]
+
+let result = goods.map(elem => ({id: elem.id ** 2, name: elem.name.length, quantity: elem.quantity*elem.id}))
+
+console.log(result)
