@@ -1,10 +1,30 @@
-function factorial30(number) {
-	if(number >= 0 && number <= 30){
-		  
+//Task1
 
-	}return (number != 1) ? number * factorial(number - 1) : 1;
-	// else{
-	// 	console.log(`Вы ввели неверное значение переменной $number`)
-	// }
+// function factorial30(number) {
+// 	if(number >= 0 && number <=30){
+//     let result = 1;
+//     while(number){
+//         result *= number--;
+//     }
+//     return result;
+// }
+// }
+// console.log(factorial30(6))
+
+//Task2
+
+const obj {
+	brand: brand,
+	year: year,
+	colourRGB: colour,
+	mileage: mileage,
+	transmissionType
 }
-factorial30(20)
+
+function Car(brand,year,colourRGB,mileage,transmissionType) {
+	this.brand = brand,
+	this.year = year,
+	this.colourRGB = colourRGB,
+	this.mileage = mileage,
+	this.transmissionType = transmissionType
+}
