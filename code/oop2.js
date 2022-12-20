@@ -61,16 +61,40 @@
 
 //Статические методы и свойства, это методы и свойства, которые доступны только у класса, но не у экземпляра класса
 
-class Data{
-	constructor(string){
-		this.string = string
-	}log(){
-		console.log(`Обычный метод`)
-	}
-	static staticProp = `Статическое свойство`
-	static staticMethod(){
-		console.log(`Статический метод`)
+// class Data{
+// 	constructor(string){
+// 		this.string = string
+// 	}log(){
+// 		console.log(`Обычный метод`)
+// 	}
+// 	static staticProp = `Статическое свойство`
+// 	static staticMethod(){
+// 		console.log(`Статический метод`)
+// 	}
+// }
+
+// let data_1 = new Data('Обычное свойство')
+
+// -----------------------------
+// Задание 3
+// Напишите класс Object2 и повторите метод keys(obj). 
+// Примечание: методы Object использовать нельзя.
+// Object.keys()
+// Object2.keys()
+
+class Object2{
+	static keys(obj){
+		let array = [];
+		for(let keys in obj){
+			array.push(keys)
+		}
+		return array
 	}
 }
 
-let data_1 = new Data('Обычное свойство')
+let obj = {name: `Alex`, age: 30}
+
+console.log(Object.keys(obj))
+console.log(Object2.keys(obj))
+
+Date.now()
