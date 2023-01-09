@@ -7,7 +7,7 @@
 //     .then(data => {
 //         let result = data.filter(elem => elem.userId == 9) 
 //         console.log(result)
-//     })
+//     }) 
 
 // ----------------------
 // Конструкция async await
